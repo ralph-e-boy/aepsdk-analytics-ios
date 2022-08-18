@@ -45,9 +45,9 @@ public class AnalyticsBase: NSObject, Extension {
     private let LOG_TAG = "Analytics"
 
     public let runtime: ExtensionRuntime
-    public let name = AnalyticsConstants.EXTENSION_NAME
-    public let friendlyName = AnalyticsConstants.FRIENDLY_NAME
-    public static let extensionVersion = AnalyticsConstants.EXTENSION_VERSION
+  public let name: String = AnalyticsConstants.EXTENSION_NAME
+  public let friendlyName: String = AnalyticsConstants.FRIENDLY_NAME
+  public static let extensionVersion: String = AnalyticsConstants.EXTENSION_VERSION
     public let metadata: [String: String]? = nil
 
     private let dataStore = NamedCollectionDataStore(name: AnalyticsConstants.DATASTORE_NAME)
